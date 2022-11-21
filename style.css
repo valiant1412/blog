@@ -8,7 +8,7 @@
 }
 
 #menu,
-.author-information{
+.author-information,.searching-area,.searching-button,.author,.recent-post{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,21 +41,61 @@
     height:1px;
     background-color: aliceblue;
 }
+.main-menu{
+    width:100%;
+}
 .button {
-    background-color: green; /* Green */
+    background-color: transparent; /* Green */
     border: none;
     color: white;
     width:100%;
-    padding: 16px 32px;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    display:flex;
+    justify-content: flex-start;
+    padding: 15px 32px;
     transition-duration: 0.4s;
     cursor: pointer;
+  }
+  .button:hover{
+    background-color:#585a5c;
+    
   }
   .social-media{
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
+.searching-area,.author{
+    width:100%;
+}
+.text{
+    color:black;
+    font-weight: 1000;
+    font-size:13px;
+    width:80%;
+    height:20px;
+    margin-bottom:6px;
+    padding: 9px 4.5px 9px 12px;    
+}
+.searching-button{
+    height:36px;
+    border:none;    
+    width:88%;
+    background-color: #3E4145;
+}
+.searching-button:hover{
+    background-color:black;
+}
+.author p{
+    font-size:12px; 
+    width:80%;
+}
+.recent-post a{
+    text-decoration: none;;
+    font-size:13px;
+    margin-top:10px;
+}
+.recent-post a:hover{
+    text-decoration: underline;
+}
