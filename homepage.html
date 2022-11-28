@@ -1,106 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="style.css">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/16d6435dcb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <title>Review game</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- create meny -->
     <section id="menu">
-        <div class="author">
-            <div class="avatar">
-            </div>
-            <div class="author-information">
-                <h1 class="name">Nguyễn Tùng Lâm</h1>
-                <p>Optimally designed for reading</p>
-            </div>
-            <div class="social-media">
-                <!-- icon mang xa hoi -->
-                <img src="image/facebook.png" class="branch">
-                <img src="image/facebook.png" class="branch">
-                <img src="image/facebook.png" class="branch">
-                <img src="image/facebook.png" class="branch">
-            </div>
+      <div class="author">
+        <div class="avatar"></div>
+        <div class="author-information">
+          <h1 class="name">Nguyễn Tùng Lâm</h1>
+          <p>Optimally designed for reading</p>
         </div>
-        <button class="hidden hamburger-button">
-            <img src="image/hamburger-icon.png">
-        </button>
-        <div class="line"></div>
-        <div class="main-menu">
-            <button class="button">Home</button>
-            <button class="button">Home</button>
-            <button class="button">Home</button>
-            <button class="button">Home</button>
-            
+        <div class="social-media">
+          <!-- icon mang xa hoi -->
+          <a href="https://www.google.com/" target="_blank">
+            <i class="fa-brands fa-square-facebook">
+            </i>
+          </a>
+          <a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          
+          
         </div>
-        <div class="line"></div>
-        <form class="searching-area">
-            <p>Search this site</p>
-                <input type="text" class="text" placeholder="Searching in here"> <!-- chua co nut xoa -->
-                <button type="submit"class="searching-button">Go</button>
-        </form>
-        <div class="line"></div>
-        <div class="recent-post">
-            <h4>Recent post</h4>
-            <a href="#">This is a Standard Post</a>
-            <a href="#">This is a Standard Post</a>
-            <a href="#">This is a Standard Post</a>
-            <a href="#">This is a S                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              tandard Post</a>
-        </div>
-        <div class="line"></div>
-        <div class="recent-post">
-            <h4>Categories</h4>
-            <a href="#">This is a Standard Post</a>
-            <a href="#">This is a Standard Post</a>
-            <a href="#">This is a Standard Post</a>
-            <a href="#">This is a Standard Post</a>
-        </div>
-        <div class="line"></div>
-        <div class="recent-post">
-            <h4>Tags</h4>
-            <p>Chua lam duoc</p>
-        </div>
-        <div class="line"></div>
-        
+      </div>
+      <button class="hidden hamburger-button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="line"></div>
+      <div class="main-menu">
+        <button class="button">Home</button>
+        <button class="button">Home</button>
+        <button class="button">Home</button>
+        <button class="button">Home</button>
+      </div>
+      <div class="line"></div>
+      <form class="searching-area">
+        <p>Search this site</p>
+        <input type="text" class="text" placeholder="Searching in here" />
+        <!-- chua co nut xoa -->
+        <button type="submit" class="searching-button">Go</button>
+      </form>
+      <div class="line"></div>
+      <div class="recent-post">
+        <h4>Recent post</h4>
+        <a href="#">This is a Standard Post</a>
+        <a href="#">This is a Standard Post</a>
+        <a href="#">This is a Standard Post</a>
+        <a href="#">This is a S tandard Post</a>
+      </div>
+      <div class="line"></div>
+      <div class="recent-post">
+        <h4>Categories</h4>
+        <a href="#">This is a Standard Post</a>
+        <a href="#">This is a Standard Post</a>
+        <a href="#">This is a Standard Post</a>
+        <a href="#">This is a Standard Post</a>
+      </div>
+      <div class="line"></div>
+      <div class="recent-post">
+        <h4>Tags</h4>
+        <p>Chua lam duoc</p>
+      </div>
+      <div class="line"></div>
     </section>
     <section id="main-post">
-        <div class="posts">
-            <img class="illustration-image"src="https://author.competethemes.com/wp-content/uploads/sites/19/2015/02/city-blurred.jpeg">
-            <h1>This is a Standard Post</h1>
+      <div class="posts">
+        <img
+          class="illustration-image"
+          src="https://author.competethemes.com/wp-content/uploads/sites/19/2015/02/city-blurred.jpeg"
+        />
+        <h1>This is a Standard Post</h1>
         <p>Published by Ben Sibley on June 23, 2022</p>
-        <p>This is what an ordinary post looks like, and you’re reading a custom excerpt right now. Have fun looking around the theme, and don’t forget to check it out on your phone!</p>
+        <p>
+          This is what an ordinary post looks like, and you’re reading a custom
+          excerpt right now. Have fun looking around the theme, and don’t forget
+          to check it out on your phone!
+        </p>
         <a href="#">Continue reading</a>
-        </div>
-        <div class="posts">
-            <img class="illustration-image"src="https://author.competethemes.com/wp-content/uploads/sites/19/2015/02/city-blurred.jpeg">
-            <h1>This is a Standard Post</h1>
+      </div>
+      <div class="posts">
+        <img
+          class="illustration-image"
+          src="https://author.competethemes.com/wp-content/uploads/sites/19/2015/02/city-blurred.jpeg"
+        />
+        <h1>This is a Standard Post</h1>
         <p>Published by Ben Sibley on June 23, 2022</p>
-        <p>This is what an ordinary post looks like, and you’re reading a custom excerpt right now. Have fun looking around the theme, and don’t forget to check it out on your phone!</p>
+        <p>
+          This is what an ordinary post looks like, and you’re reading a custom
+          excerpt right now. Have fun looking around the theme, and don’t forget
+          to check it out on your phone!
+        </p>
         <a href="#">Continue reading</a>
-        </div>
-        <div class="posts">
-            <img class="illustration-image"src="https://author.competethemes.com/wp-content/uploads/sites/19/2015/02/city-blurred.jpeg">
-            <h1>This is a Standard Post</h1>
+      </div>
+      <div class="posts">
+        <img
+          class="illustration-image"
+          src="https://author.competethemes.com/wp-content/uploads/sites/19/2015/02/city-blurred.jpeg"
+        />
+        <h1>This is a Standard Post</h1>
         <p>Published by Ben Sibley on June 23, 2022</p>
-        <p>This is what an ordinary post looks like, and you’re reading a custom excerpt right now. Have fun looking around the theme, and don’t forget to check it out on your phone!</p>
+        <p>
+          This is what an ordinary post looks like, and you’re reading a custom
+          excerpt right now. Have fun looking around the theme, and don’t forget
+          to check it out on your phone!
+        </p>
         <a href="#">Continue reading</a>
-        </div>
-        <div class="posts">
-            <img class="illustration-image"src="https://author.competethemes.com/wp-content/uploads/sites/19/2015/02/city-blurred.jpeg">
-            <h1>This is a Standard Post</h1>
+      </div>
+      <div class="posts">
+        <img
+          class="illustration-image"
+          src="https://author.competethemes.com/wp-content/uploads/sites/19/2015/02/city-blurred.jpeg"
+        />
+        <h1>This is a Standard Post</h1>
         <p>Published by Ben Sibley on June 23, 2022</p>
-        <p>This is what an ordinary post looks like, and you’re reading a custom excerpt right now. Have fun looking around the theme, and don’t forget to check it out on your phone!</p>
+        <p>
+          This is what an ordinary post looks like, and you’re reading a custom
+          excerpt right now. Have fun looking around the theme, and don’t forget
+          to check it out on your phone!
+        </p>
         <a href="#">Continue reading</a>
-        </div>
-        
+      </div>
     </section>
-</body>
-
+  </body>
 </html>
