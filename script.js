@@ -19,5 +19,5 @@ if(function_items.style.display==='none'){
 })
 search_button.addEventListener('click',function(event){
     event.preventDefault();
-    window.location.href='http://127.0.0.1:5555/searching-page/';
+    window.location.href='http://127.0.0.1:5500/no-result/index.html';
 })
