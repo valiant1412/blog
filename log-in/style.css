@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+
+* {
+    font-family: Raleway;
+
+    font-size: 14px;
+}
+
+body {
+    margin: 0 auto;
+    background-color: rgb(116, 192, 252);
+    height: 100%;
+    min-height: 100vh;
+}
+
+.slogan,
+body,
+.log-in,
+#container,
+.function-container,
+.fields,
+.log-in-container,
+.social-media-container,
+.another-method-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+}
+
+.slogan {
+    width: 50%;
+    height: 100%;
+
+}
+
+.slogan h1 {
+    width: 50%;
+    font-weight: 600;
+    line-height: 2.5em;
+    text-align: center;
+
+    text-transform: uppercase;
+    font-size: 3.2em;
+    text-shadow: 2px 2px 5px rgb(151, 150, 150)
+}
+
+.log-in {
+    width: 50%;
+    height: 100%;
+
+}
+
+.log-in-container {
+    width: 60%;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgb(45, 45, 45)
+}
+
+.function-container {
+    width: 100%;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+#log-in,
+#sign-in {
+    cursor: pointer;
+    font-size: 2em;
+    font-family: Raleway;
+    text-transform: uppercase;
+}
+
+.fields {
+    flex-direction: column;
+    width: 80%;
+    padding-bottom: 5%;
+    border-bottom: 3px solid rgb(156, 155, 155);
+}
+
+.input {
+    width: 100%;
+    height: 20%;
+    padding: 2%;
+    margin: 3% 3%;
+}
+
+.submit {
+    width: 50%;
+    border-radius: 10px;
+    padding: 2%;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    background-color: rgb(0, 132, 255);
+}
+
+.another-method-container {
+    flex-direction: column;
+    width: 100%;
+}
+
+.another-method-container p {
+    text-align: center;
+}
+
+.instar-container {
+    background: #f96854;
+    background: -webkit-linear-gradient(to right, #f96854, #f7b6d3);
+    background: linear-gradient(to right, #f96854, #f7b6d3);
+}
+
+.social-media-container {
+    width: 80%;
+    justify-content: space-around;
+    margin-bottom: 5%;
+}
+
+.instar-container {
+    background: linear-gradient(to right, #f96854, #f7b6d3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.fa-brands {
+    font-size: 4em;
+}
