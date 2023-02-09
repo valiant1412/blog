@@ -10,10 +10,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height:100vh;
 }
 
 #not_found {
   width: 50%;
+  
 }
 
 #not_found_404 {
@@ -74,4 +77,44 @@ h1 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+/* 768,643,449 */
+@media screen and (max-width:1014px){
+  h1{
+    font-size:1.3em;
+    width:40%;
+  }
+  #back_button{
+    font-size:1em;
+    width:40%;
+  }
+}
+@media screen and (max-width:712px){
+
+  #not_found,#not_found_404 {
+   display:none;
+  }
+  h1{
+    font-size:1em;
+    width:40%;
+  }
+  #back_button{
+    font-size:0.9em;
+    width:40%;
+    overflow: hidden;
+  }
+  .not-found{
+    height:100%;
+  }
+}
+@media screen and (max-width:656px){
+  .fa-arrow-left{
+    display:none;
+  }
+  #back_button{
+    content:'Come back';
+    font-size:0.8em;
+    width:40%;
+    overflow: hidden;
+  }
 }
