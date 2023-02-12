@@ -50,7 +50,8 @@ body,
     text-shadow: 2px 2px 5px rgb(151, 150, 150)
 }
 
-.log-in {
+.log-in,
+.sign-in {
     width: 50%;
     height: 100%;
 
@@ -72,10 +73,34 @@ body,
 
 #log-in,
 #sign-in {
+    position: relative;
     cursor: pointer;
     font-size: 2em;
     font-family: Raleway;
     text-transform: uppercase;
+}
+
+#log-in:before {
+    content: "";
+    display: var(--LogIn_underline, block);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: orangered;
+
+}
+
+#sign-in:before {
+    content: "";
+    display: var(--SignIn_underline, block);
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: orangered;
 }
 
 .fields {
@@ -92,7 +117,8 @@ body,
     margin: 3% 3%;
 }
 
-.submit {
+.submit_log_in,
+.submit_sign_in {
     width: 50%;
     border-radius: 10px;
     padding: 2%;
@@ -111,11 +137,7 @@ body,
     text-align: center;
 }
 
-.instar-container {
-    background: #f96854;
-    background: -webkit-linear-gradient(to right, #f96854, #f7b6d3);
-    background: linear-gradient(to right, #f96854, #f7b6d3);
-}
+
 
 .social-media-container {
     width: 80%;
@@ -129,10 +151,88 @@ body,
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: transparent;
-    font-size: 36px;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
 .fa-brands {
     font-size: 4em;
+}
+
+.hidden {
+    display: none
+}
+
+.paragraph {
+    font-size: 1.3em
+}
+
+.warning {
+    margin: 0;
+    width: 100%;
+    font-size: 0.9em;
+    margin-bottom: 5%
+}
+
+.correct,
+.fa-circle-check {
+    color: green;
+}
+
+@media screen and (max-width:768px) {
+
+    #log-in,
+    #sign-in,
+    .submit_log_in,
+    .submit_sign_in .paragraph {
+        font-size: 1em;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder {
+        font-size: 0.8em;
+    }
+
+    .slogan h1 {
+        font-size: 2em;
+    }
+
+    .fa-brands {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width:643px) {
+    .fa-brands {
+        font-size: 2.5em;
+    }
+
+    .slogan h1,
+    .slogan {
+        display: none
+    }
+
+    .log-in {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:487px) {
+
+    #log-in,
+    #sign-in,
+    .submit_log_in,
+    .submit_sign_in,
+    .paragraph {
+        font-size: 0.5em;
+    }
+
+    input[type="text"]::placeholder,
+    input[type="password"]::placeholder {
+        font-size: 0.6em;
+    }
+
+    .fa-brands {
+        font-size: 2em;
+    }
 }

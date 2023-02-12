@@ -29,10 +29,33 @@
                 <form class="fields">
                     <input class="input" type="text" placeholder="Email/Phone number/Username">
                     <input class="input" type="password" placeholder="Password">
-                    <button class="submit" type="submit">Log in</button>
+                    <button class="submit_log_in" type="submit">Log in</button>
+                </form>
+                <form class="fields hidden">
+                    <input class="input" type="text" placeholder="Email/Phone number/Username">
+                    <input class="input password" type="password" placeholder="Password">
+                    <input class="input retype_password" type="password" placeholder="Retype the password">
+                    <p class="warning incorrect hidden" style="color:red">Your password did not match</p>
+                    <p class="warning correct hidden"><i class="fa-solid fa-circle-check"></i> Correct</p>
+                    <button class="submit_sign_in" type="submit">Sign in</button>
+
                 </form>
                 <div class="another-method-container">
-                    <p style="font-size:1.3em">Or you can log in with another</p>
+                    <p class="paragraph">Or you can log in with another</p>
+                    <div class="social-media-container">
+                        <a href="https://www.google.com/" target="_blank" style="color:rgb(15,145,243)"><i
+                                class="fa-brands fa-square-facebook"></i></a>
+                        <span class="instar-container">
+                            <a href="https://www.google.com/" target="_blank"><i class="fa-brands fa-instagram"
+                                    style="color:white"></i></a>
+                        </span>
+
+                        <a href="https://www.google.com/" target="_blank" style="color:rgb(255,0,0)"><i
+                                class="fa-brands fa-youtube"></i></i></a>
+                    </div>
+                </div>
+                <div class="another-method-container hidden">
+                    <p class="paragraph">Or you can sign in with another</p>
                     <div class="social-media-container">
                         <a href="https://www.google.com/" target="_blank" style="color:rgb(15,145,243)"><i
                                 class="fa-brands fa-square-facebook"></i></a>
