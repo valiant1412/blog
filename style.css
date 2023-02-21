@@ -351,3 +351,7 @@ input[type="search"] {
     padding: 10px;
   }
 }
+
+.add-icon {
+  cursor: pointer;
+}

@@ -3,6 +3,7 @@ const add_icon = document.querySelector('.add-icon');
 const hamburger_button = document.querySelector('.hamburger-button');
 const function_items= document.querySelector('.functions');
 const search_button = document.querySelector('.submit');
+const add_page = document.querySelector('.add-icon')
 add_icon.addEventListener("mouseover",function(){
     
     addingPostNote.classList.remove('hidden');
@@ -20,4 +21,7 @@ if(function_items.style.display==='none'){
 search_button.addEventListener('click',function(event){
     event.preventDefault();
     window.location.href='http://127.0.0.1:5500/no-result/index.html';
+})
+add_page.addEventListener('click',function(){
+    window.location.href='http://127.0.0.1:5500/add-post/add-post.html';
 })
