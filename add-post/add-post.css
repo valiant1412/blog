@@ -1,20 +1,108 @@
+* {
+    font-family: Montserrat;
+    color: white
+}
+
 body {
     background-color: #f0f1f2;
     height: 100%;
     min-height: 100vh;
 }
 
-body {
+body,
+.container,
+.post-form {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container {
+    flex-direction: column;
     box-shadow: 1px 5px 24px 8px rgba(0, 0, 0, 0.8);
     -webkit-box-shadow: 1px 5px 24px 8px rgba(0, 0, 0, 0.8);
     -moz-box-shadow: 1px 5px 24px 8px rgba(0, 0, 0, 0.8);
     background-color: white;
     border-radius: 10px;
-    width: 80%
+    width: 80%;
+    background-color: #27292b
+}
+
+.post-form {
+    flex-direction: column;
+    width: 80%;
+}
+
+h2 {
+    margin: 0;
+}
+
+.post-infor {
+    width: 100%;
+    max-height: 100px;
+    min-height: 10px;
+    padding: 5px 10px 5px 10px;
+    font-size: 17px;
+
+}
+
+.post-avatar {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.post-content {
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    display: block;
+    padding: 5px 10px 5px 10px;
+
+}
+
+#previewImage {
+    margin-top: 10px;
+    width: 30%;
+}
+
+.form-input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.submit_button,
+.cancel_button {
+    font-size: 1em;
+    background-color: #0F91F3;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+}
+
+.cancel_button {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+}
+
+.submit {
+    padding: 18px;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media screen and (max-width:448px) {
+
+    .title,
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .post-form {
+        width: 70%;
+    }
 }
