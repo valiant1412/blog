@@ -23,8 +23,13 @@ const fileInput = document.querySelector('.post-avatar');
     }
   });
   //cancel
-  const cancelBtn = document.querySelector('.cancel_button');
+  const cancelBtn = document.querySelector('.cancelBtn');
   cancelBtn.addEventListener('click',function(event){
     event.preventDefault();
     window.history.back();
+  })
+  //post
+  const submitBtn = document.querySelector(".submitBtn");
+  submitBtn.addEventListener('click',function(){
+    confirm('Do you want to post it');
   })

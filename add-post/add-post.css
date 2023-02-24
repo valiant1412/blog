@@ -1,108 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+/* sidebar */
 * {
     font-family: Montserrat;
-    color: white
+    color: white;
+    font-size: 14px;
 }
 
 body {
-    background-color: #f0f1f2;
-    height: 100%;
-    min-height: 100vh;
+    background-color: #F0F1F2;
+    display: flex;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+
 }
 
-body,
-.container,
-.post-form {
+h1 {
+    font-size: 35px;
+
+}
+
+#sidebar {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow-y: auto;
+    height: 100vh;
+    width: 25%;
+    background-color: #27292B;
+    z-index: 10000;
+}
+
+#sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+#sidebar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.menu {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    width: 85%;
+    border-bottom: 1px solid rgb(196, 194, 194);
+}
+
+.menu h1 {
+    font-size: 15px;
+}
+
+.container,
+.functions,
+.header,
+.search-bar,
+.content,
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header,
+.header p {
+    margin-bottom: 0;
+    border: none;
+}
+
+.avatar {
+    width: 35%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.header h1 {
+    font-size: 24px;
+    margin: 15px 0 0 0;
+}
+
+.hamburger-button {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fa-brands {
+    font-size: 30px;
+    color: rgb(153, 155, 155)
+}
+
+.fa-brands:hover {
+    color: white;
+}
+
+.item {
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.item:hover {
+    background-color: rgb(66, 66, 65)
+}
+
+.category {
+    justify-content: space-between;
+}
+
+
+
+input[type="search"] {
+    font-weight: 1000;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 9px 4.5px 9px 12px;
+    color: #27292B;
+}
+
+.submit {
+    padding: 9.6px;
+    width: 100%;
+    border: none;
+    background-color: #3E4145;
+}
+
+.author {
+    justify-content: flex-start;
+}
+
+.author a {
+    display: block;
+    text-decoration: none;
+}
+
+.author a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.fas {
+    color: rgb(221, 68, 81);
+}
+
+.fas:hover {
+    transform: rotate(30deg);
+    transition: 0.2s ease-out;
+}
+
+/* adding area css */
+#add-post-container {
+    width: 100%;
+
+    border: 1px solid black;
+}
+
+#add-post-container,
+.adding-area,
+.post-form {
+
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.container {
-    flex-direction: column;
-    box-shadow: 1px 5px 24px 8px rgba(0, 0, 0, 0.8);
-    -webkit-box-shadow: 1px 5px 24px 8px rgba(0, 0, 0, 0.8);
-    -moz-box-shadow: 1px 5px 24px 8px rgba(0, 0, 0, 0.8);
-    background-color: white;
-    border-radius: 10px;
-    width: 80%;
-    background-color: #27292b
+.adding-area {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 1%;
 }
 
-.post-form {
-    flex-direction: column;
-    width: 80%;
-}
-
-h2 {
-    margin: 0;
-}
-
-.post-infor {
+.post-form,
+.post-fields {
     width: 100%;
-    max-height: 100px;
-    min-height: 10px;
-    padding: 5px 10px 5px 10px;
-    font-size: 17px;
 
-}
-
-.post-avatar {
-    width: 100%;
-    margin-top: 10px;
 }
 
 .post-content {
+    color: black;
     width: 100%;
-    overflow: hidden;
-    resize: none;
-    display: block;
-    padding: 5px 10px 5px 10px;
-
+    padding: 10px;
 }
 
-#previewImage {
-    margin-top: 10px;
-    width: 30%;
-}
-
-.form-input {
+.post-input {
+    color: black;
     width: 100%;
-    margin-bottom: 20px;
+    min-height: 20px;
+    padding: 10px;
 }
 
-.submit_button,
-.cancel_button {
-    font-size: 1em;
-    background-color: #0F91F3;
-    border: none;
-    color: white;
+.post-fields h2,
+.post-avatar {
+    color: black;
+}
+
+.button-container {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.btn {
+    color: black;
+    margin: 20px;
     border-radius: 10px;
+}
+
+.submitBtn {
+    color: white;
+    background-color: #0f91f3;
+    border: none;
     padding: 10px 20px 10px 20px;
 }
 
-.cancel_button {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    padding: 10px 10px 10px 10px;
+@media screen and (max-width:768px) {
+    body {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        background-color: transparent;
+        width: 100%;
+        height: fit-content;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .functions {
+        background-color: #27292B;
+        width: 25%;
+        overflow: scroll;
+        height: 100vh;
+        display: none;
+        padding-left: 10px;
+    }
+
+    .header,
+    .container {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #27292B;
+    }
+
+    .container {
+        justify-content: flex-start;
+        width: 50%;
+    }
+
+    .avatar {
+        width: 17%;
+        margin-right: 13px;
+    }
+
+    .hamburger-button {
+        margin-top: 20px;
+        display: block;
+    }
 }
 
-.submit {
-    padding: 18px;
-}
+@media screen and (max-width:643px) {
 
-button {
-    cursor: pointer;
-}
-
-@media screen and (max-width:448px) {
-
-    .title,
-    h2 {
-        font-size: 1.3em;
+    .avatar,
+    .author-information p {
+        display: none;
     }
 
     .post-form {
-        width: 70%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:449px) {
+    .author-information h1 {
+        font-size: 20px;
+    }
+
+    .fas {
+        font-size: 40px;
+    }
+
+
+}
+
+@media screen and (max-width:769px) {
+    body {
+        flex-direction: column;
+    }
+
+    #sidebar {
+        background-color: transparent;
+        width: 100%;
+        height: fit-content;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .functions {
+        background-color: #27292B;
+        width: 25%;
+        overflow: scroll;
+        height: 100vh;
+        display: none;
+        padding-left: 10px;
+    }
+
+    .header,
+    .container {
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #27292B;
+    }
+
+    .container {
+        justify-content: flex-start;
+        width: 50%;
+    }
+
+    .avatar {
+        width: 17%;
+        margin-right: 13px;
+    }
+
+    .hamburger-button {
+        margin-top: 20px;
+        display: block;
+    }
+
+    #add-post-container {
+        margin-top: 10%;
+    }
+
+    .adding-area {
+        margin-left: 0;
+        width: 100%;
     }
 }
